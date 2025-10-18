@@ -382,6 +382,7 @@ test('branch1', async ({ page }) => {
   await page.getByRole('textbox', { name: 'รหัสผ่าน' }).fill('admin.min');
   await page.getByRole('button', { name: 'เข้าสู่ระบบ' }).click();
   await page.getByRole('link', { name: '🌿 แก้ไขสาขา' }).click();
+  await page.getByRole('link', { name: ' เพิ่มสาขา' }).click();
   await page.getByRole('textbox', { name: 'ชื่อสาขา' }).fill('');
   await page.getByRole('button', { name: ' บันทึก' }).click();
   await page.screenshot({path:"test-results/screenshot20.png",fullPage:true});
